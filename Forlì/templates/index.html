@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>lista spesa</title>
 </head>
 <body>
-    <h1>prova</h1>
+    <h1>La tua lista della spesa</h1>
+    {% if lista %}
+        <ul>
+            {% for elemento in lista %}
+                {% endfor %}
+        </ul>
+    {% else %}
+        <p>la lista è vuota</p>
+    {% endif %}
 </body>
 </html>
