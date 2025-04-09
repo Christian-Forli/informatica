@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Utenti</title>
+</head>
+<body>
+    <h1>Lista Utenti</h1>
+    <ul>
+        {% for dato in dati %}
+        <li>
+            <strong>Nome:</strong> {{ dato['Nome'] }}<br>
+            <strong>Cognome:</strong> {{ dato['Cognome'] }}<br>
+            <strong>Scuola:</strong> {{ dato['Scuola'] }}<br>
+            <strong>Hobby:</strong> {{ dato['Hobby'] }}<br>
+            <a href="modifica.html">Modifica</a>
+        </li>
+        <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>
