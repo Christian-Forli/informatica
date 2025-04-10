@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo Utente</title>
+</head>
+
+<body>
+    <h1>Dati Utente</h1>
+    <ul>
+        <li>Nome: {{ nome }}</li>
+        <li>Cognome: {{ cognome }}</li>
+        <li>Scuola: {{ scuola }}</li>
+        <li>Hobby: {{ hobby }}</li>
+    </ul>
+    <!-- Link per modificare i dati -->
+    <a href="{{ url_for('modifica') }}">Modifica Profilo</a>
+</body>
+
+</html>
